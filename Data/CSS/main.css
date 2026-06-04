@@ -1113,6 +1113,11 @@ dialog[open] {
 }
 
 @media screen and (orientation:landscape) {
+    .project {
+        /* Layout */
+        gap: 20px;
+    }
+
     .project[reverse] {
         /* Layout */
         flex-direction: row-reverse;
