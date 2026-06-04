@@ -334,6 +334,7 @@ class AboutPage {
 const about = new AboutPage();
 
 
+
  /*$$$$$
 |_  $$_/
   | $$   /$$$$$$/$$$$   /$$$$$$   /$$$$$$   /$$$$$$   /$$$$$$$
@@ -405,6 +406,8 @@ class ImagesPage {
 }
 
 const images = new ImagesPage();
+
+
 
  /*$$$$$$$
 |__  $$__/
@@ -486,6 +489,7 @@ class TeamPage {
 }
 
 const team = new TeamPage();
+
 
 
  /*$$$$$$                                               /$$
@@ -581,6 +585,7 @@ class ProjectsPage {
 const projects = new ProjectsPage();
 
 
+
  /*$$$$$$$                    /$$
 | $$_____/                   | $$
 | $$     /$$$$$$   /$$$$$$  /$$$$$$    /$$$$$$   /$$$$$$
@@ -605,51 +610,6 @@ class Footer {
 
 const footer = new Footer();
 
-
- /*$$$$$$                                                     /$$                 /$$     /$$
-| $$__  $$                                                   | $$                | $$    |__/
-| $$  \ $$ /$$$$$$   /$$$$$$   /$$$$$$$  /$$$$$$  /$$$$$$$  /$$$$$$    /$$$$$$  /$$$$$$   /$$  /$$$$$$  /$$$$$$$
-| $$$$$$$//$$__  $$ /$$__  $$ /$$_____/ /$$__  $$| $$__  $$|_  $$_/   |____  $$|_  $$_/  | $$ /$$__  $$| $$__  $$
-| $$____/| $$  \__/| $$$$$$$$|  $$$$$$ | $$$$$$$$| $$  \ $$  | $$      /$$$$$$$  | $$    | $$| $$  \ $$| $$  \ $$
-| $$     | $$      | $$_____/ \____  $$| $$_____/| $$  | $$  | $$ /$$ /$$__  $$  | $$ /$$| $$| $$  | $$| $$  | $$
-| $$     | $$      |  $$$$$$$ /$$$$$$$/|  $$$$$$$| $$  | $$  |  $$$$/|  $$$$$$$  |  $$$$/| $$|  $$$$$$/| $$  | $$
-|__/     |__/       \_______/|_______/  \_______/|__/  |__/   \___/   \_______/   \___/  |__/ \______/ |__/  |_*/
-
-class PresentationMenu {
-
-    //Menu
-    #menu = document.getElementById('presentationMenu');
-    #title = document.getElementById('presentationMenuTitle');
-    #content = document.getElementById('presentationMenuContent');
-
-    toggleMenu = () => {
-        //Toggle menu
-        if (this.#menu.open) {
-            //Close
-            this.#menu.close();
-            Util.toggleScroll(true);
-        } else {
-            //Open
-            this.#menu.showModal();
-            Util.toggleScroll(false);
-        }
-    }
-
-    localize = () => {
-        this.#title.innerText = loc.presentation.title;
-        this.#content.innerHTML = loc.presentation.content;
-    }
-
-    constructor() {
-        //Close menu listener
-        Util.onDialogBackdropClick(this.#menu, this.toggleMenu);
-    }
-
-}
-
-const presentation = new PresentationMenu();
-
-if (window.location.search === '?presentation') presentation.toggleMenu();
 
 
  /*$                                     /$$ /$$                       /$$     /$$
@@ -711,9 +671,6 @@ function localize() {
     projects.localize();
     team.localize();
     footer.localize();
-
-    //Menus
-    presentation.localize();
 }
 
 localize()
