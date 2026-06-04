@@ -1,3 +1,3 @@
 # Portfolio
 
-[Click here to open the portfolio 😺](https://sillytwinsstudio.github.io/Portfolio/)
+[Click here to open our portfolio 😺](https://sillytwinsstudio.github.io/Portfolio/)
