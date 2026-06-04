@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Info -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Silly Twins Studio</title>
+    <link rel="icon" href="Data/Images/logo.webp">
+
+    <!-- Style & Scripts -->
+    <link rel="stylesheet" href="Data/CSS/main.css">
+    <script src="Data/JS/util.js"></script>
+</head>
+
+<!-- Page -->
+<body>
+
+      <!--$$$  /$$       /$$           /$$                          
+     /$$__  $$|__/      | $$          | $$                          
+    | $$  \__/ /$$  /$$$$$$$  /$$$$$$ | $$$$$$$   /$$$$$$   /$$$$$$ 
+    |  $$$$$$ | $$ /$$__  $$ /$$__  $$| $$__  $$ |____  $$ /$$__  $$
+     \____  $$| $$| $$  | $$| $$$$$$$$| $$  \ $$  /$$$$$$$| $$  \__/
+     /$$  \ $$| $$| $$  | $$| $$_____/| $$  | $$ /$$__  $$| $$      
+    |  $$$$$$/| $$|  $$$$$$$|  $$$$$$$| $$$$$$$/|  $$$$$$$| $$      
+     \______/ |__/ \_______/ \_______/|_______/  \_______/|-->      
+
+    <!-- Toggle (for mobile) -->
+    <div class="sidebarToggle" onclick="sidebar.toggle()">
+        <img src="Data/Images/Icons/menu.webp">
+    </div>
+
+    <!-- Sidebar -->
+    <div id="sidebar" class="sidebar" onclick="sidebar.toggle()">
+        <div class="sidebarLayout" onclick="event.stopPropagation()">
+            <!-- Pages -->
+            <a id="goTo-home" class="sidebarButton" onclick="goTo('home')" selected>
+                <img src="Data/Images/Icons/home.webp">
+                <span id="sidebar-home">Home</span>
+                <indicator class="sidebarButtonIndicator"></indicator>
+            </a>
+            <a id="goTo-about" class="sidebarButton" onclick="goTo('about')">
+                <img src="Data/Images/Icons/game.webp">
+                <span id="sidebar-about">Game</span>
+                <indicator class="sidebarButtonIndicator"></indicator>
+            </a>
+            <a id="goTo-images" class="sidebarButton" onclick="goTo('images')">
+                <img src="Data/Images/Icons/images.webp">
+                <span id="sidebar-images">Screenshots</span>
+                <indicator class="sidebarButtonIndicator"></indicator>
+            </a>
+            <a id="goTo-team" class="sidebarButton" onclick="goTo('team')">
+                <img src="Data/Images/Icons/about.webp">
+                <span id="sidebar-team">Team</span>
+                <indicator class="sidebarButtonIndicator"></indicator>
+            </a>
+            <a id="goTo-projects" class="sidebarButton" onclick="goTo('projects')">
+                <img src="Data/Images/Icons/projects.webp">
+                <span id="sidebar-projects">Projects</span>
+                <indicator class="sidebarButtonIndicator"></indicator>
+            </a>
+            <a id="goTo-footer" class="sidebarButton" onclick="goTo('footer')">
+                <img src="Data/Images/Icons/email.svg">
+                <span id="sidebar-footer">Contact</span>
+                <indicator class="sidebarButtonIndicator"></indicator>
+            </a>
+
+            <!-- Space -->
+            <div class="sidebarSpace"></div>
+
+            <!-- Options -->
+            <a class="sidebarButton" onclick="swapLocale()">
+                <img src="Data/Images/Icons/language.webp">
+                <span id="sidebar-localization">Language</span>
+            </a>
+        </div>
+    </div>
+
+
+      <!--$$$                        /$$                           /$$
+     /$$__  $$                      | $$                          | $$
+    | $$  \__/  /$$$$$$  /$$$$$$$  /$$$$$$    /$$$$$$  /$$$$$$$  /$$$$$$
+    | $$       /$$__  $$| $$__  $$|_  $$_/   /$$__  $$| $$__  $$|_  $$_/
+    | $$      | $$  \ $$| $$  \ $$  | $$    | $$$$$$$$| $$  \ $$  | $$
+    | $$    $$| $$  | $$| $$  | $$  | $$ /$$| $$_____/| $$  | $$  | $$ /$$
+    |  $$$$$$/|  $$$$$$/| $$  | $$  |  $$$$/|  $$$$$$$| $$  | $$  |  $$$$/
+     \______/  \______/ |__/  |__/   \___/   \_______/|__/  |__/   \_-->
+
+    <!-- Content -->
+    <div id="content">
+        <!-- Home -->
+        <div id="home" class="page">
+            <!-- Logo -->
+            <img class="homeLogo" src="Data/Images/logo.webp">
+            
+            <!-- Small description -->
+            <span id="homeDescription">Very very cool game!</span>
+            
+            <!-- Buttons -->
+            <div class="homeButtons">
+                <!-- Trailer -->
+                <a class="homeButton" target="_blank" href="https://youtu.be/EeqhIRJs7ds">
+                    <img src="Data/Images/Icons/youtube.svg">
+                </a>
+                <!-- Game -->
+                <a class="homeButton" target="_blank" href="https://supertwinstudio.itch.io/project-paper">
+                    <img src="Data/Images/Icons/itchio.svg">
+                </a>
+            </div>
+        </div>
+
+        <!-- Game -->
+        <div id="about" class="page">
+            <!-- Rupture -->
+            <svg class="rupture" viewBox="0 0 1158.5 27.5" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1158.5 27.5H0V18.5L50.5 8.5L95.5 13L229.5 8.5L480.5 13.5L561 8.5L602 13.5L623 0L794 8.5L876 18.5L942 8.5L1158.5 18.5V27.5Z"/>
+            </svg>
+
+            <!-- Colums -->
+            <div class="aboutColumns">
+                <!-- Column 1 -->
+                <div class="aboutContent" style="flex: 1;">
+                    <!-- Title -->
+                    <div id="aboutTitle" class="pageTitle">Our Game!</div>
+
+                    <!-- Content -->
+                    <span id="aboutContent">
+                        The Hog Rider is a Rare card that is unlocked from the Builder's Workshop (Arena 5). 
+                        It spawns a fast, single-target, building-targeting, melee, ground troop with high hitpoints and high damage. 
+                        <br><br>
+                        He is able to jump over the river. 
+                        He appears as a dark-skinned shirtless man with blue eyes, dark brown eyebrows, beard and mohawk, and a golden body piercing in his left ear, wearing a team-colored belt and wristbands, along with a brown loincloth and sandals. 
+                        <br><br>
+                        He wields a hammer with two brass-colored bands and a team-colored ribbon tied at the bottom, and is riding a hog. 
+                        A Hog Rider card costs 4 Elixir to deploy.
+                    </span>
+                </div>
+
+                <!-- Column 2 -->
+                <div class="aboutContent">
+                    <!-- Title -->
+                    <div id="aboutFeatures" class="pageTitle">Features</div>
+
+                    <!-- Content -->
+                    <ul>
+                        <li id="aboutFeature0">Procedural dungeon generation</li>
+                        <li id="aboutFeature1">Multiple weapons to choose from</li>
+                        <li id="aboutFeature2">Different enemies and bosses</li>
+                        <li id="aboutFeature3">Items that aleatorize the runs</li>
+                        <li id="aboutFeature4">A very cute aesthetic</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Navigation button -->
+            <div id="aboutImages" class="button" onclick="goTo('images')" style="width: max-content;">Check out some screenshots!</div>
+
+            <!-- Rupture -->
+            <svg class="rupture" reverse viewBox="0 0 1158.5 27.5" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1158.5 27.5H0V18.5L50.5 8.5L95.5 13L229.5 8.5L480.5 13.5L561 8.5L602 13.5L623 0L794 8.5L876 18.5L942 8.5L1158.5 18.5V27.5Z"/>
+            </svg>
+        </div>
+
+        <!-- Images -->
+        <div id="images" class="page">
+            <!-- Carousel -->
+            <div class="imagesArrows">
+                <div id="imagesArrowPrevious" class="imagesArrow">
+                    <img src="Data/Images/Icons/play.svg" style="scale: -1;">
+                </div>
+                <div id="imagesArrowNext" class="imagesArrow">
+                    <img src="Data/Images/Icons/play.svg">
+                </div>
+            </div>
+    
+            <!-- Carousel -->
+            <div id="imagesItems" class="imagesItems"></div>
+        </div>
+
+        <!-- Team -->
+        <div id="team" class="page">
+            <!-- Rupture -->
+            <svg class="rupture" viewBox="0 0 1158.5 27.5" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1158.5 27.5H0V18.5L50.5 8.5L95.5 13L229.5 8.5L480.5 13.5L561 8.5L602 13.5L623 0L794 8.5L876 18.5L942 8.5L1158.5 18.5V27.5Z"/>
+            </svg>
+
+            <!-- Title -->
+            <div id="teamTitle" class="pageTitle">Team</div>
+
+            <!-- Content -->
+            <div class="teamContent">
+                <!-- Buddy 1 -->
+                <div class="teamBuddy">
+                    <img id="teamBuddy0-img" src="Data/Images/logo.webp">
+                    <div>
+                        <span id="teamBuddy0-name">Gurt</span>
+                        <span id="teamBuddy0-desc">Yo</span>
+                        <a id="teamBuddy0-button" class="button" target="_blank">Link</a>
+                    </div>
+                </div>
+
+                <!-- Buddy 2 -->
+                <div class="teamBuddy">
+                    <img id="teamBuddy1-img" src="Data/Images/logo.webp">
+                    <div>
+                        <span id="teamBuddy1-name">Gurt</span>
+                        <span id="teamBuddy1-desc">Yo</span>
+                        <a id="teamBuddy1-button" class="button" target="_blank">Link</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Rupture -->
+            <svg class="rupture" reverse viewBox="0 0 1158.5 27.5" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1158.5 27.5H0V18.5L50.5 8.5L95.5 13L229.5 8.5L480.5 13.5L561 8.5L602 13.5L623 0L794 8.5L876 18.5L942 8.5L1158.5 18.5V27.5Z"/>
+            </svg>
+        </div>
+
+        <!-- Projects -->
+        <div id="projects" class="page" themed>
+            <!-- Title -->
+            <div id="projectsTitle" class="pageTitle">Projects</div>
+
+            <!-- Projects -->
+            <div class="projectsList">
+                <!-- Project 0 -->
+                <div class="project">
+                    <div class="projectImage">
+                        <img id="project0-image">
+                    </div>
+                    <div class="projectContent">
+                        <div id="project0-buddies"></div>
+                        <div id="project0-title">Title</div>
+                        <div id="project0-content">Content</div>
+                        <a id="project0-button" class="button" target="_blank">Button</a>
+                    </div>
+                </div>
+
+                <!-- Project 1 -->
+                <div class="project" reverse>
+                    <div class="projectImage">
+                        <img id="project1-image">
+                    </div>
+                    <div class="projectContent">
+                        <div id="project1-buddies"></div>
+                        <div id="project1-title">Title</div>
+                        <div id="project1-content">Content</div>
+                        <a id="project1-button" class="button" target="_blank">Button</a>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project">
+                    <div class="projectImage">
+                        <img id="project2-image">
+                    </div>
+                    <div class="projectContent">
+                        <div id="project2-buddies"></div>
+                        <div id="project2-title">Title</div>
+                        <div id="project2-content">Content</div>
+                        <a id="project2-button" class="button" target="_blank">Button</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div id="footer" class="page">
+            <!-- Rupture -->
+            <svg class="rupture" viewBox="0 0 1158.5 27.5" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1158.5 27.5H0V18.5L50.5 8.5L95.5 13L229.5 8.5L480.5 13.5L561 8.5L602 13.5L623 0L794 8.5L876 18.5L942 8.5L1158.5 18.5V27.5Z"/>
+            </svg>
+
+            <!-- Title -->
+            <div id="footerTitle" class="pageTitle">Contact</div>
+
+            <!-- Content -->
+            <div class="footerButtons">
+                <!-- TikTok -->
+                <a class="footerButton" target="_blank" href="https://www.tiktok.com/@silly.twins.studio">
+                    <img src="Data/Images/Icons/tiktok.png">
+                </a>
+                <!-- YouTube -->
+                <a class="footerButton" target="_blank" href="https://www.youtube.com/@SillyTwinsStudio">
+                    <img src="Data/Images/Icons/youtube.svg">
+                </a>
+                <!-- GitHub -->
+                <a class="footerButton" target="_blank" href="https://github.com/SillyTwinsStudio">
+                    <img src="Data/Images/Icons/github.png">
+                </a>
+                <!-- Mail -->
+                <a class="footerButton" href="mailto:silly.twins.studio@gmail.com">
+                    <img src="Data/Images/Icons/email.svg">
+                </a>
+            </div>
+        </div>
+    </div>
+
+
+     <!--$$$$                                                     /$$                 /$$     /$$
+    | $$__  $$                                                   | $$                | $$    |__/
+    | $$  \ $$ /$$$$$$   /$$$$$$   /$$$$$$$  /$$$$$$  /$$$$$$$  /$$$$$$    /$$$$$$  /$$$$$$   /$$  /$$$$$$  /$$$$$$$
+    | $$$$$$$//$$__  $$ /$$__  $$ /$$_____/ /$$__  $$| $$__  $$|_  $$_/   |____  $$|_  $$_/  | $$ /$$__  $$| $$__  $$
+    | $$____/| $$  \__/| $$$$$$$$|  $$$$$$ | $$$$$$$$| $$  \ $$  | $$      /$$$$$$$  | $$    | $$| $$  \ $$| $$  \ $$
+    | $$     | $$      | $$_____/ \____  $$| $$_____/| $$  | $$  | $$ /$$ /$$__  $$  | $$ /$$| $$| $$  | $$| $$  | $$
+    | $$     | $$      |  $$$$$$$ /$$$$$$$/|  $$$$$$$| $$  | $$  |  $$$$/|  $$$$$$$  |  $$$$/| $$|  $$$$$$/| $$  | $$
+    |__/     |__/       \_______/|_______/  \_______/|__/  |__/   \___/   \_______/   \___/  |__/ \______/ |__/  |-->
+
+    <dialog id="presentationMenu">
+        <!-- Title -->
+        <span id="presentationMenuTitle" class="menuTitle">HOLAAA!!!</span>
+
+        <!-- Close button -->
+        <div class="menuClose" onclick="presentation.toggleMenu()">
+            <img src="Data/Images/Icons/close.webp">
+        </div>
+
+        <!-- Content -->
+        <div class="menuList">
+            <!-- Text -->
+            <span id="presentationMenuContent">¡Bienvenido de nuesta presentacion!<br><br>Esperamos que te encante el juego y nos mandes un bizum a cada uno.</span>
+
+            <!-- Game -->
+            <a class="button" target="_blank" href="https://supertwinstudio.itch.io/project-paper" onclick="presentation.toggleMenu()">Itch.io</a>
+        </div>
+    </dialog>
+</body>
+
+<!-- Script -->
+<script src="Data/JS/main.js"></script>
+</html>
