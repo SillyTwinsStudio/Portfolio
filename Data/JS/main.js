@@ -50,24 +50,21 @@ const locales = {
         },
         //About
         about: {
-            title: 'Washi & The Paper Kingdom',
+            title: 'Hackoon',
             features: 'Features',
             feature: [
-                'Procedural dungeon generation',
-                'Multiple weapons to choose from',
-                'Different enemies and bosses to combat',
-                'Items that aleatorize the runs',
-                'A very cute aesthetic'
+                'Block-based visual programming',
+                'Multiple worlds with different esthetics',
+                'New mechanics each level',
+                'Physics and logic based puzzles',
+                'Native support for controller and keyboard/mouse'
             ],
             content: `
-                <i><b>Washi & The Paper Kingdom</b></i> is an isometric extraction-roguelite action videogame set in a miniature fantasy kingdom.
-                The game is centered on combat and the exploration of procedurally generated dungeons, where you explore rooms, find treasures, defeat enemies, and extract the loot found to sell it and buy upgrades.
+                Trash panda by day, hacker raccoon by night. While peacefully browsing cat videos, our resident raccoon fell for the oldest trick in the book: a free trash pop-up. One click later, a devastating virus hijacked his laptop, sucked all its games into a digital vortex, and fused them into a chaotic, glitched-out mega-world.
                 <br><br>
-                The game follows the story of Hayashi, a kingdom where its inhabitants are made of a special type of paper that gives them character.
-                The kingdom is kept safe by ancient magical scrolls (papyri) that maintain order.
-                Hayashi's balance is threatened when the Cult of the Flame breaches the great gate and bursts into the town to steal the scrolls and kidnap Prince Kami, Washi's brother, to use him as a receptacle to resurrect Akarigami, a fearsome deity who intends to destroy the world.
+                Now, it is up to you to venture inside the machine to clean up the mess. Explore three distinct, corrupted dimensions where you'll have to complete levels to fix the games. Fortunately, you are not alone in this digital landfill; Boti, an adorable little assistant robot, is by your side to help navigate the madness.
                 <br><br>
-                Players will accompany the little Washi, an origami warrior whose goal is to free his brother from the clutches of the cult and recover the sacred scrolls to restore order to the kingdom and seal Akarigami.`,
+                Grab, drag, and place logic blocks in a visual interface to rewire the world around you. Change the temperature to freeze water, alter the weight of objects to trigger scales, and rewrite the behavior of platforms to reach places you couldn't before. Fix the glitches, outsmart the bugs, and get your games back online!`,
             images: 'Check out some screenshots!'
         },
         //Team
@@ -143,24 +140,21 @@ const locales = {
         },
         //About
         about: {
-            title: 'Washi & The Paper Kingdom',
+            title: 'Hackoon',
             features: 'Características',
             feature: [
-                'Generación procedimental de mazmorras',
-                'Multiples armas para elegir',
-                'Diferentes enemigos y jefes para combatir',
-                'Items que aleatorizan las runs',
-                'Una estética muy mona'
+                'Programacion visual por bloques',
+                'Multiples mundos con diferentes estéticas',
+                'Nuevas mecánicas cada nivel',
+                'Puzles basados en fisicas y lógica',
+                'Soporte nativo para mando y teclado/ratón'
             ],
             content: `
-                <i><b>Washi & The Paper Kingdom</b></i> es un videojuego de acción de género extraction-roguelite en perspectiva isométrica ambientado en un reino fantástico en miniatura. 
-                El juego está centrado en el combate y en la exploración de mazmorras generadas procedimentalmente, donde se exploran salas, encuentran tesoros, derrotan enemigos y extrae el botín encontrado para venderlo y comprar mejoras.
+                Trash panda de día, mapache hacker de noche. Mientras navegaba tranquilamente viendo vídeos de gatitos, nuestro mapache residente cayó en el truco más viejo del mundo: un pop-up de basura gratis. Un clic después, un virus devastador secuestró su portátil, absorbió todos sus juegos en un vórtice digital y los fusionó en un megamundo caótico y lleno de fallos.
                 <br><br>
-                El juego sigue la historia de Hayashi, un reino donde sus habitantes están hechos de un tipo de papel especial que les otorga carácter. 
-                El reino se mantiene a salvo gracias a unos ancestrales papiros mágicos que mantienen el orden. 
-                El equilibrio de Hayashi se ve amenazado cuando el Culto de la Llama quebranta la gran puerta e irrumpe en el pueblo para robar los papiros y secuestrar al príncipe Kami, hermano de Washi, para emplearlo como receptáculo y resucitar a Akarigami, una deidad temible que pretende destruir el mundo. 
+                Ahora, depende de ti adentrarte en la máquina para solucionar el desastre. Explora tres dimensiones distintas y corruptas donde tendrás que completar niveles para arreglar los juegos. Afortunadamente, no estás solo en este vertedero digital; Boti, un adorable robot asistente, está a tu lado para ayudarte a navegar por la locura.
                 <br><br>
-                Los jugadores acompañarán al pequeño Washi, un guerrero origami cuyo objetivo es liberar a su hermano de las garras del culto y recuperar los papiros sagrados para devolver el orden al reino y sellar a Akarigami.`,
+                Coge, arrastra y coloca bloques de lógica en una interfaz visual para reprogramar el mundo que te rodea. Cambia la temperatura para congelar el agua, altera el peso de los objetos para activar balanzas y reescribe el comportamiento de las plataformas para llegar a lugares que antes eran inalcanzables. ¡Corrige los fallos, sé más listo que los errores de código y recupera tus juegos!`,
             images: '¡Mira algunas capturas!'
         },
         //Team
