@@ -781,6 +781,7 @@ dialog[open] {
     /* Layout */
     display: flex;
     gap: 20px;
+    padding-right: 20px; /* To fix with visual offset */
 }
 
 .homeButton {

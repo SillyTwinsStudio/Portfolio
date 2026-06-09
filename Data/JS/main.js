@@ -421,7 +421,7 @@ const images = new ImagesPage();
 const Buddies = {
     Alex: {
         id: 'alex',
-        image: 'Data/Images/Team/alex.webp',
+        image: 'Data/Images/Team/alex.jpg',
         name: 'Alex',
         button: {
             name: 'Portfolio',
